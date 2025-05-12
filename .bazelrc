@@ -9,6 +9,7 @@
 # The number 3G is chosen heuristically to both support large VM and small VM with RBE.
 # Startup options cannot be selected via config.
 # TODO: Adding just to test android
+# dummy change here...
 startup --host_jvm_args=-Xmx3g
 
 common --noenable_bzlmod
