@@ -1,0 +1,183 @@
+{
+  "config": {
+    "envoy": {
+      "icon": "[![](https://avatars.githubusercontent.com/u/30125649?s=24&v=4)](#)"
+    },
+    "ci": {
+      "agent-ubuntu": "ubuntu-24.04",
+      "build-image": {
+        "repo": "envoyproxy/envoy-build-ubuntu",
+        "sha": "d38457962937370aa867620a5cc7d01c568621fc0d1a57e044847599372a8571",
+        "mobile-sha": "5ff2c9ce8f3abdb89d305095a39fd0e7ee97422cc017d9578e738f9a56bc33d8",
+        "gcr-sha": "56b66cc84065c88a141963cedbbe4198850ffae0dacad769f516d0e9081439da",
+        "tag": "cb86d91cf406995012e330ab58830e6ee10240cb"
+      },
+      "cache": {
+        "bazel": "93d1c73a44bcb38f451a092e8158b01e07f791394b5e73f53ba2036835051251"
+      }
+    }
+  },
+  "checks": {
+    "checks": {
+      "name": "Envoy/Checks",
+      "id": "checks",
+      "action": "SKIP",
+      "check-id": 42062167439
+    },
+    "macos": {
+      "name": "Envoy/macOS",
+      "id": "macos",
+      "action": "SKIP",
+      "check-id": 42062167497
+    },
+    "mobile-cc": {
+      "name": "Mobile/CC",
+      "id": "mobile-cc",
+      "action": "SKIP",
+      "check-id": 42062167492
+    },
+    "prechecks": {
+      "name": "Envoy/Prechecks",
+      "advice": {
+        "general": "### Ensuring your commits are signed off\n\nYou can set up DCO using Envoy's git hooks.\n\n### Git hooks\n\nTo set this up, do the following:\n\n  ```console\n  $ ./support/bootstrap\n  ```\n\n  If you only want the DCO check you can do the following to disable the\n  other hooks\n\n  ```console\n  $ echo NO_VERIFY=1 > .env\n  ```\n",
+        "deps": "### Advice on updating dependencies\n\nGeneral information about Envoy's depdendencies [can be found here](https://github.com/envoyproxy/envoy/blob/main/DEPENDENCY_POLICY.md)\n",
+        "format": "### Advice on correct formatting\n\nEnvoy ensures a minimum standard for all files in the repository.\n\nYou are strongly advised to heed the following CI notice:\n\n  ```console\n    Please fix your editor to ensure:\n\n      - no trailing whitespace\n      - no preceding mixed tabs/spaces\n      - all files end with a newline\n  ```\n"
+      },
+      "id": "prechecks",
+      "action": "SKIP",
+      "check-id": 43232545249
+    },
+    "publish": {
+      "name": "Envoy/Publish and verify",
+      "id": "publish",
+      "action": "SKIP",
+      "check-id": 43232545254
+    },
+    "mobile-android": {
+      "name": "Mobile/Android",
+      "id": "mobile-android",
+      "action": "SKIP",
+      "check-id": 42062167457
+    },
+    "mobile-android-tests": {
+      "name": "Mobile/Android tests",
+      "id": "mobile-android-tests",
+      "action": "SKIP",
+      "check-id": 42062167471
+    },
+    "mobile-asan": {
+      "name": "Mobile/ASAN",
+      "id": "mobile-asan",
+      "action": "SKIP",
+      "check-id": 42062167467
+    },
+    "mobile-coverage": {
+      "name": "Mobile/Coverage",
+      "id": "mobile-coverage",
+      "action": "SKIP",
+      "check-id": 42062167463
+    },
+    "mobile-format": {
+      "name": "Mobile/Format",
+      "id": "mobile-format",
+      "action": "SKIP",
+      "check-id": 42062167509
+    },
+    "mobile-ios": {
+      "name": "Mobile/iOS",
+      "cache": null,
+      "id": "mobile-ios",
+      "action": "SKIP",
+      "check-id": 42062167517
+    },
+    "mobile-ios-tests": {
+      "name": "Mobile/iOS tests",
+      "id": "mobile-ios-tests",
+      "action": "SKIP",
+      "check-id": 42062167513
+    },
+    "mobile-perf": {
+      "name": "Mobile/Perf",
+      "id": "mobile-perf",
+      "action": "SKIP",
+      "check-id": 42062167496
+    },
+    "mobile-release-validation": {
+      "name": "Mobile/Release validation",
+      "id": "mobile-release-validation",
+      "action": "SKIP",
+      "check-id": 42062167454
+    },
+    "mobile-tsan": {
+      "name": "Mobile/TSAN",
+      "id": "mobile-tsan",
+      "action": "SKIP",
+      "check-id": 42062167486
+    }
+  },
+  "request": {
+    "ref": "6b0b57e0b4491585e3f6aa39ebfc3f7da3e233ba",
+    "sha": "{TODO_SHA_HERE}",
+    "pr": 39303,
+    "base-sha": "8a60ac8c62d0dae8c2ba0df1402348377cc29421",
+    "actor": {
+      "name": "haxxor",
+      "icon": "https://avatars.githubusercontent.com/u/355251"
+    },
+    "message": "BooFarMessage",
+    "started": 1747058162.14343,
+    "target-branch": "main",
+    "trusted": true,
+    "version": {
+      "major": 1,
+      "minor": 35,
+      "patch": 0,
+      "dev": true,
+      "changed": false
+    },
+    "version-current": {
+      "major": 1,
+      "minor": 35,
+      "patch": 0,
+      "dev": true
+    },
+    "build-image": {
+      "default": "envoyproxy/envoy-build-ubuntu:cb86d91cf406995012e330ab58830e6ee10240cb@sha256:d38457962937370aa867620a5cc7d01c568621fc0d1a57e044847599372a8571",
+      "mobile": "envoyproxy/envoy-build-ubuntu:mobile-cb86d91cf406995012e330ab58830e6ee10240cb@sha256:5ff2c9ce8f3abdb89d305095a39fd0e7ee97422cc017d9578e738f9a56bc33d8"
+    },
+    "build-image-current": {
+      "default": "envoyproxy/envoy-build-ubuntu:cb86d91cf406995012e330ab58830e6ee10240cb@sha256:d38457962937370aa867620a5cc7d01c568621fc0d1a57e044847599372a8571",
+      "mobile": "envoyproxy/envoy-build-ubuntu::mobile-cb86d91cf406995012e330ab58830e6ee10240cb@sha256:5ff2c9ce8f3abdb89d305095a39fd0e7ee97422cc017d9578e738f9a56bc33d8"
+    }
+  },
+  "run": {
+    "build-macos": false,
+    "check-build": false,
+    "check-coverage": false,
+    "check-san": false,
+    "mobile-android": false,
+    "mobile-android-all": false,
+    "mobile-android-tests": false,
+    "mobile-asan": false,
+    "mobile-cc": false,
+    "mobile-coverage": false,
+    "mobile-format": false,
+    "mobile-ios": false,
+    "mobile-ios-all": false,
+    "mobile-ios-tests": false,
+    "mobile-perf": false,
+    "mobile-release-validation": false,
+    "mobile-tsan": false,
+    "precheck-deps": false,
+    "precheck-format": false,
+    "precheck-publish": false,
+    "publish": true,
+    "verify": false
+  },
+  "summary": {
+    "summary": "FooBar",
+    "title": "pr/XXX/",
+    "link": "https://github.com/envoyproxy/envoy/TODO",
+    "linked-title": "TODO2"
+  }
+}
